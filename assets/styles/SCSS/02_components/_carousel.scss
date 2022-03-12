@@ -1,0 +1,12 @@
+
+.carousel-indicators {
+  margin-bottom: 5px!important;
+}
+.carousel-indicators [data-bs-target] {
+  height: 10px!important;
+  width: 10px!important;
+  border-radius: 10px!important;
+  border-top: none!important;
+  border-bottom: none!important;
+}
+

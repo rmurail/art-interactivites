@@ -1,0 +1,66 @@
+
+.icon--fixed-xxs {
+  width: 15px !important;
+  height: 15px !important;
+}
+
+.icon--fixed-xs {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.icon--fixed-xsm {
+  width: 25px !important;
+  height: 25px !important;
+}
+
+.icon--fixed-sm {
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.icon--fixed {
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.icon--fixed-md {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.icon--fixed-lg {
+  width: 60px !important;
+  height: 60px !important;
+}
+
+.icon--fixed-xl {
+  width: 80px !important;
+  height: 80px !important;
+}
+
+.icon--fixed-xxl {
+  width: 130px !important;
+  height: 130px !important;
+}
+
+
+
+/*.icon--fixed-md-xs svg {*/
+/*@include media-breakpoint-up(md) {*/
+/*    width: rem(20) !important;*/
+/*    height: rem(20) !important;*/
+/*}*/
+/*}*/
+
+/*.icon--fixed-md-xsm svg {*/
+/*@include media-breakpoint-up(md) {*/
+/*    width: rem(25) !important;*/
+/*    height: rem(25) !important;*/
+/*}*/
+/*}*/
+
+/*.icon-padding {*/
+/*    padding-left: rem(5);*/
+/*    padding-right: 0!important; !* surcharge *!*/
+/*}*/
