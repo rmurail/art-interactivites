@@ -61,6 +61,10 @@
 /*    padding-left: rem(5);*/
 /*    padding-right: 0!important; !* surcharge *!*/
 /*}*/
+* {
+  font-family: "Acumin Pro Wide";
+}
+
 .reross {
   font-family: Reross;
 }
@@ -2706,6 +2710,26 @@ img {
   }
 }
 .btn {
+  border-radius: 0 !important;
+  text-transform: uppercase;
+}
+
+.btn-orange {
+  background-color: #FE9B04;
+  color: white !important;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: black !important;
+  border-bottom: 3px solid black;
+  background-color: transparent !important;
+  font-weight: bold;
+}
+
+.nav-pills .nav-link {
+  text-transform: uppercase;
+  color: black !important;
+  background-color: none !important;
   border-radius: 0 !important;
 }
 
