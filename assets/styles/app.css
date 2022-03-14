@@ -113,6 +113,7 @@ H1 {
 H2 {
   font-family: Reross;
   text-transform: uppercase;
+  font-size: 20px;
 }
 
 H3 {
@@ -130,6 +131,20 @@ p {
   font-family: "Acumin Pro Wide";
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+@media (min-width: 575.98px) {
+  H2 {
+    font-size: 30px;
+  }
+}
 .orange {
   background-color: #FE9B04;
 }
@@ -2719,6 +2734,36 @@ img {
   color: white !important;
 }
 
+.btn-white {
+  color: black;
+  text-transform: uppercase;
+  border: 1px solid black;
+}
+.btn-white:hover {
+  color: white;
+  background-color: black;
+}
+
+.btn-white-XL {
+  padding-left: 80px;
+  padding-right: 80px;
+  color: black;
+  text-transform: uppercase;
+  border: 1px solid black;
+}
+.btn-white-XL:hover {
+  color: white;
+  background-color: black;
+}
+
+.tag-white {
+  color: black;
+  padding: 5px;
+  border: 1px solid black;
+  max-width: 100px;
+  border-radius: 0;
+}
+
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   color: black !important;
   border-bottom: 3px solid black;
@@ -2766,6 +2811,27 @@ img {
 }
 .artwork-info {
   border: 2px solid black;
+}
+
+.artwork-info-img {
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+}
+
+.artwork-line-right {
+  position: absolute;
+  right: 0;
+  border: 2px solid black;
+  width: 200px;
+}
+
+@media (min-width: 575.98px) {
+  .artwork-info-img {
+    height: 200px;
+    width: 200px;
+    border-radius: 200px;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -1,3 +1,25 @@
 .artwork-info {
   border: 2px solid black;
 }
+
+
+.artwork-info-img {
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+}
+
+.artwork-line-right {
+  position: absolute;
+  right: 0;
+  border: 2px solid black;
+  width: 200px;
+}
+
+@media (min-width: 575.98px) {
+  .artwork-info-img {
+    height: 200px;
+    width: 200px;
+    border-radius: 200px;
+  }
+}

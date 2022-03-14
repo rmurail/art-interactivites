@@ -9,3 +9,34 @@
   color:white!important;
 }
 
+.btn-white {
+  color: black;
+  text-transform: uppercase;
+  border: 1px solid black;
+
+  &:hover {
+    color: white;
+    background-color: black;
+  }
+}
+
+.btn-white-XL {
+  padding-left: 80px;
+  padding-right: 80px;
+  color: black;
+  text-transform: uppercase;
+  border: 1px solid black;
+
+  &:hover {
+    color: white;
+    background-color: black;
+  }
+}
+
+.tag-white {
+  color: black;
+  padding: 5px;
+  border: 1px solid black;
+  max-width: 100px;
+  border-radius: 0;
+}
