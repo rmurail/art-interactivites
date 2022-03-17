@@ -33,3 +33,22 @@ $i: 0;
 .p-10 {
   padding: 10px;
 }
+
+.p-30 {
+  padding: 30px;
+}
+
+@media (min-width: 575.98px) {
+
+.m-t-lg-50 {
+  margin-top: 50px;
+}
+
+.m-b-lg-50 {
+    margin-bottom: 50px;
+}
+
+.p-r-50 {
+  padding-right: 50px;
+}
+}

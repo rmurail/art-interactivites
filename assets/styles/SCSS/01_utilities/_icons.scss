@@ -44,7 +44,24 @@
   height: 130px !important;
 }
 
+.icon-like {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 35px;
+  padding: 8px;
+  margin-top: -5px;
+  background-color: white;
+  border-radius: 50px;
+}
 
+@media (min-width: 575.98px) {
+  .icon-like {
+    left: 8%;
+    margin-top: -1px;
+    margin-left: -2px;
+  }
+}
 
 /*.icon--fixed-md-xs svg {*/
 /*@include media-breakpoint-up(md) {*/
