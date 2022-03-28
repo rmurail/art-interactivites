@@ -9,7 +9,7 @@ img {
 .gallery {
   display: flex;
   margin: 10px auto;
-  max-width: $max-img-width;
+  width: auto;
   position: relative;
   padding-top: $max-img-height/$max-img-width * 100%;
 

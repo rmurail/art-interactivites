@@ -38,17 +38,26 @@ $i: 0;
   padding: 30px;
 }
 
-@media (min-width: 575.98px) {
-
-.m-t-lg-50 {
-  margin-top: 50px;
+.p-80 {
+  padding: 80px;
 }
 
-.m-b-lg-50 {
-    margin-bottom: 50px;
-}
+@media (min-width: 992px) {
 
-.p-r-50 {
-  padding-right: 50px;
-}
+  .m-b-lg-30 {
+    margin-bottom: 30px;
+  }
+
+  .m-t-lg-50 {
+    margin-top: 50px;
+  }
+
+  .m-b-lg-50 {
+      margin-bottom: 50px;
+  }
+
+  .p-r-50 {
+    padding-right: 50px;
+  }
+
 }

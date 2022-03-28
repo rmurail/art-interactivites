@@ -19,6 +19,10 @@
     background-color: black;
   }
 }
+.btn-outline-dark {
+  background-color: white;
+  border: 3px solid black
+}
 
 .btn-white-XL {
   padding-left: 80px;
@@ -48,4 +52,12 @@
   border: 1px solid #707070;
   max-width: 100px;
   border-radius: 0!important;
+}
+
+.tag-vendu {
+  padding: 15px 15px;
+  max-height: 65px;
+  position: relative;
+  bottom: 60px;
+  background-color: hsla(255, 255, 255, 0.4);
 }

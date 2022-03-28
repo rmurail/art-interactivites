@@ -63,8 +63,8 @@
 
 <!-- Menu oeuvre -->
 
-    <ul class="d-none d-lg-flex col-12 nav nav-oeuvre justify-content-md-end">
-        <li class="nav-item nav-item-empty">
+    <ul class="nav-artwork d-none d-lg-flex col-12 nav nav-oeuvre justify-content-md-end">
+        <li class=" nav-item nav-item-empty">
             <span class="nav-link"></span>
         </li>
         <li class="nav-item">
@@ -82,8 +82,8 @@
         </li>
     </ul>
 
-<div class="d-flex flex-wrap">
-    <div class="col-12 col-md-8 m-t-lg-50">
+<div class="d-flex flex-wrap justify-content-between m-t-lg-30">
+    <div class="col-12 col-lg-8 m-t-lg-50">
         <div>
             <p class="col-12 reross text-center d-block d-lg-none m-b-0">Emmanuelle MARTIN, France</p>
             <p class="col-12 f-12 text-end d-block d-lg-none">Peintre confirmée</p>
@@ -112,7 +112,14 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-12 d-flex flex-wrap justify-content-around">
+
+                <div class="align-self-center">
+                    <img class="icon--fixed-xs m-r-10" src="assets/img/icon_heart.png" alt="like">
+                    <img class="icon--fixed-xs m-r-10" src="assets/img/icon_share.png" alt="share">
+                    <p class="m-b-0 f-12">100 vues</p>
+                </div>
+
                 <div id="product-slider__nav" class="object-fit--contain">
 
                     <img class="lazyload" data-src="https://cdn-thumbs.ohmyprints.net/1/e2e542f15dc7a7f0381ad2d05528f618/817x600/thumbnail/fit.jpg" alt="" />
@@ -124,8 +131,8 @@
                     <img class="lazyload" data-src="https://m.media-amazon.com/images/I/71HPjUgkFqL._AC_SY606_.jpg" alt="" />
 
                     <img class="lazyload" data-src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt="" />
-
                 </div>
+
             </div>
         </div>
 
@@ -146,8 +153,8 @@
 <!--            </div>-->
 <!--        </div>-->
 
-        <div class="d-flex flex-wrap m-t-50">
-        <H2 class="col-10 col-lg-8 reross align-self-end">À propos de l'oeuvre</H2>
+        <div class="d-none d-lg-flex artwork-info-col d-flex flex-wrap m-t-50">
+        <H2 class="col-10 reross align-self-end p-10">À propos de l'oeuvre</H2>
 
             <div class="dropdown col-2">
                 <button class="btn dropdown-toggle dropend" type="button" id="dropdownVolume" data-bs-toggle="dropdown" aria-expanded="false">
@@ -159,7 +166,7 @@
                 </ul>
             </div>
 
-            <p class="col-12 p-10 m-t-15 m-b-0">
+            <p class="col-12 p-10 m-t-15 m-b-0 text-justify">
                 Artiste de l’Image Holly Watt est une photographe française. Elle a eu une enfance riche en voyages et en découvertes  ce qui l’a
                 rendue à l’affut de toutes sortes d’émotions. Elle découvre la photographie pendant son  adolescence et commence à faire ses
                 premières photos en argentique. Avec son appareil en bandoulière, elle effectue plusieurs  tours du monde pendant  de
@@ -196,9 +203,9 @@
 <!--        </ul>-->
 <!--    </div>-->
 
-    <div class="col-12 col-md-4 m-t-lg-50 p-10">
-        <div class="artwork-info p-10 m-b-30">
-            <h4 class="text-center">Jeune fille à la perle, 2021</h4>
+    <div class="artwork-info-column col-12 col-lg-3 m-t-lg-50">
+        <div class="artwork-info p-30 m-b-lg-30">
+            <h4 class="text-center space-no-wrap f-18 f-md-16">Jeune fille à la perle, 2021</h4>
             <p class="text-center reross d-none d-lg-block bold">Emmanuelle MARTIN, France</p>
             <p class="f-14">
                 <ul class="f-14 list-unstyled">
@@ -212,7 +219,7 @@
             </p>
         </div>
 
-        <div class="artwork-info m-b-30 p-10">
+        <div class="artwork-info d-none d-lg-block m-b-lg-30 p-30">
             <p class="text-center reross text-uppercase bold">Résumé</p>
             <ul class="f-14 list-unstyled">
                 <li>- Artiste émergent</li>
@@ -223,17 +230,22 @@
             </ul>
         </div>
 
-        <div class="artwork-info m-b-30 p-10">
+        <div class="artwork-info m-b-lg-30 p-30">
             <p class="text-center reross f-24">3000 €</p>
 
             <hr class="text-center">
 
             <p class="f-14 fst-italic text-center">Payez en 3 x sans frais *</p>
 
-            <button class="col-12 btn btn-orange reross f-16 m-b-15" type="button">Acquérir l'oeuvre</button>
-            <button class="col-12 btn btn-outline-dark reross f-16 m-b-15" type="button">Proposer un prix</button>
+            <div>
+                <button class="col-12 btn btn-orange reross f-16 m-b-15" type="button">Acquérir l'oeuvre</button>
+                <button class="col-12 btn btn-outline-dark reross f-16 m-b-15" type="button">Proposer un prix</button>
+                <div class="artwork-info-button-line d-block d-lg-none"></div>
+            </div>
 
-<!-- CHECKBOX -->
+
+
+            <!-- CHECKBOX -->
             <div>
                 <ul class="f-14 list-unstyled fst-italic m-b-15 text-center">
                     <li>- Oeuvre originale</li>
@@ -256,23 +268,23 @@
 <!-- TABS -->
                 <ul class="nav nav-pills f-14 col-12 justify-content-center mb-3" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Paiement</button>
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-payment" aria-selected="true">Paiement</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Livraison</button>
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-delivery" aria-selected="false">Livraison</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Retour</button>
+                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-return" aria-selected="false">Retour</button>
                     </li>
                 </ul>
                 <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="tab-pane fade" id="pills-payment" role="tabpanel" aria-labelledby="pills-payment-tab">
                         <ul class="f-12 list-unstyled p-10">
                             <li>- Nullam nec tempor nibh</li>
                             <li>- Donec odio risus</li>
                         </ul>
                     </div>
-                    <div class="tab-pane fade show active" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class="tab-pane fade show active" id="pills-delivery" role="tabpanel" aria-labelledby="pills-delivery-tab">
                         <ul class="f-12 list-unstyled p-10">
                             <li class="text-underline m-b-55>- Frais de livraison GRATUIT en Europe</li>
                             <li>- Livraison sous 7 jours en moyenne</li>
@@ -280,7 +292,7 @@
                             <li>- Retours GRATUIT 14 jours après réception</li>
                         </ul>
                     </div>
-                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <div class="tab-pane fade" id="pills-return" role="tabpanel" aria-labelledby="pills-return-tab">
                         <ul class="f-12 list-unstyled p-10">
                             <li>- Nullam nec tempor nibh</li>
                             <li>- Donec odio risus</li>
@@ -304,9 +316,37 @@
     </div>
 </div>
 
-    <div class="col-12 d-flex flex-wrap justify-content-center m-t-30 m-b-lg-50">
+    <div class="col-12 d-flex flex-wrap justify-content-center m-t-lg-50 m-b-lg-50">
+        <div class="col-12 d-block d-lg-none artwork-info-right">
+            <ul class="nav-artwork-2 d-flex d-lg-none col-12 nav nav-oeuvre justify-content-md-end text-center">
+                <li class="flex-fill nav-item">
+                    <a class="nav-link" href="#">À propos <br>de l'oeuvre</a>
+                </li>
+                <li class="flex-fill nav-item">
+                    <a class="nav-link" href="#">Paiement</a>
+                </li>
+                <li class="flex-fill nav-item">
+                    <a class="nav-link" href="#">Livraison</a>
+                </li>
+                <li class="flex-fill nav-item">
+                    <a class="nav-link" href="#">Retour</a>
+                </li>
+            </ul>
+            <div class="nav-artwork-2-line"></div>
+            <div class="nav-artwork-2-line-2"></div>
+            <div class="nav-artwork-2-line-3"></div>
 
-        <div class="col-12 col-lg-9 d-flex flex-wrap">
+            <p class="p-30 m-t-15 m-b-0 text-justify">
+                Artiste de l’Image Holly Watt est une photographe française. Elle a eu une enfance riche en voyages et en découvertes  ce qui l’a
+                rendue à l’affut de toutes sortes d’émotions. Elle découvre la photographie pendant son  adolescence et commence à faire ses
+                premières photos en argentique. Avec son appareil en bandoulière, elle effectue plusieurs  tours du monde pendant  de
+                nombreuses années. D’une grande curiosité et avec une sensibilité qui lui est propre, Holly aime susciter l’émotion dans notre
+                regard. Attachée à notre planète, elle s’inspire de ses oeuvres d’art naturelles. Holly nous invite au voyage avec elle dans son univers.
+            </p>
+
+            <span class="artwork-info-p-border"></span>
+        </div>
+        <div class="col-12 col-lg-9 d-flex flex-wrap m-t-50">
             <div class="col-5 text-center"><img class="artwork-info-img" src="https://www.apprendre-a-dessiner.org/wp-content/uploads/2017/08/pablo_picasso_la_clau.jpg" alt="portrait-artiste">
             </div>
             <div class="col-7 p-10 d-flex flex-wrap">
@@ -318,18 +358,29 @@
             </div>
 
         </div>
+
+        <div class="col-12 artwork-info-full d-block d-lg-none m-b-lg-30 p-30">
+            <p class="text-center reross text-uppercase bold">Résumé</p>
+            <ul class="f-14 list-unstyled">
+                <li>- Artiste émergent</li>
+                <li>- Artiste prometteur à investir</li>
+                <li>- Rayonnement national</li>
+                <li>- Article de presse</li>
+                <li>- Best seller</li>
+            </ul>
+        </div>
     </div>
 
-    <div class="col-12 m-t-50 m-b-50">
-        <H2 class="col-12 reross m-b-30">Oeuvres par série de l'artiste</H2>
+    <div class="col-12 m-t-50 m-b-50 p-l-lg-30">
+        <H2 class="col-12 reross m-b-30 p-l-10">Oeuvres par série de l'artiste</H2>
         <div class="col-12 d-flex flex-wrap m-b-30">
             <div class="col-4 col-lg-8"></div>
             <div class="col-8 col-lg-4 text-end">
                 <button class="btn btn-white">Afficher tout</button>
             </div>
         </div>
-        <div class="col-12 d-flex flex-wrap justify-content-between">
-            <div class="card-artwork col-12 col-md-4 p-30 m-b-30">
+        <div class="artwork-info-column col-12 d-flex flex-wrap justify-content-between">
+            <div class="card-artwork col-12 col-lg-3 p-30 m-b-30">
                 <div>
                     <img class="col-12 m-b-15" src="https://www.businesscoot.com/uploads/study_main_image/166.webp" alt="oeuvre">
                     <span class="icon-like text-center"><img class="icon--fixed-xs vertical-align-center" src="assets/img/icon_heart.png" alt="icon-like"></span>
@@ -351,75 +402,99 @@
                 <div class="d-flex flex-wrap">
                     <div class="col-8">
                         <p><span class="tag-grey">Peintre</span> <span class="tag-grey">Sculpteur</span></p>
-                        <p><img class="icon--fixed-xs" src="assets/img/icon_pin.png" alt="localisation"> Paris, France</p>
                     </div>
-                    <div class="col-4 text-center"><a href="#" class="reross f-16">+ Suivre l'artiste</a></div>
-                </div>
-
-                <div class="col-12 text-center"><button class="btn btn-white-XL">En savoir +</button></div>
-            </div>
-
-
-            <div class="card-artwork col-12 col-md-4 p-30 m-b-30">
-                <div>
-                    <img class="col-12 m-b-15" src="https://www.businesscoot.com/uploads/study_main_image/166.webp" alt="oeuvre">
-                    <divz class="icon-like text-center"><img class="icon--fixed-xs vertical-align-center" src="assets/img/icon_heart.png" alt="icon-like"></divz>
-                </div>
-                <div class="tag-grey m-b-15"><p class="text-center m-b-0">230 vues</p></div>
-                <div class="d-flex flex-wrap">
-                    <div class="col-8">
-                        <p class="fst-italic m-b-5">Nom de la série</p>
-                        <p class="m-b-5">N° de série : 1/10</p>
+                    <p></p>
+                    <div class="col-4 text-center">
                     </div>
-                    <div class="col-4 text-center"><p class="reross f-16">3000€</p></div>
 
-                    <div class="col-12">
-                        <p class="m-b-5">Acrylique sur toile, <span class="light-grey">120cmx35cm</span></p>
-                        <p class="bold m-b-5">Emmanuelle Martin</p>
-                    </div>
-                </div>
-
-                <div class="d-flex flex-wrap">
-                    <div class="col-8">
-                        <p><span class="tag-grey">Peintre</span> <span class="tag-grey">Sculpteur</span></p>
-                        <p><img class="icon--fixed-xs" src="assets/img/icon_pin.png" alt="localisation"> Paris, France</p>
-                    </div>
-                    <div class="col-4 text-center"><a href="#" class="reross f-16">+ Suivre l'artiste</a></div>
-                </div>
-
-                <div class="col-12 text-center"><button class="btn btn-white-XL">En savoir +</button></div>
-            </div>
-
-
-            <div class="card-artwork col-12 col-md-4 p-30 m-b-30">
-                <div>
-                    <img class="col-12 m-b-15" src="https://www.businesscoot.com/uploads/study_main_image/166.webp" alt="oeuvre">
-                    <div class="float-left text-center"><img class="icon--fixed-xs vertical-align-center" src="assets/img/icon_heart.png" alt="icon-like/"></div>
-                </div>
-                <div class="tag-grey m-b-15"><p class="text-center m-b-0">230 vues</p></div>
-                <div class="d-flex flex-wrap">
-                    <div class="col-8">
-                        <p class="fst-italic m-b-5">Nom de la série</p>
-                        <p class="m-b-5">N° de série : 1/10</p>
-                    </div>
-                    <div class="col-4 text-center"><p class="reross f-16">3000€</p></div>
-
-                    <div class="col-12">
-                        <p class="m-b-5">Acrylique sur toile, <span class="light-grey">120cmx35cm</span></p>
-                        <p class="bold m-b-5">Emmanuelle Martin</p>
-                    </div>
-                </div>
-
-                <div class="d-flex flex-wrap">
-                    <div class="col-8">
-                        <p><span class="tag-grey">Peintre</span> <span class="tag-grey">Sculpteur</span></p>
+                    <div class="col-6">
                         <p><img class="icon--fixed-xs" src="assets/img/icon_pin.png" alt="localisation"> Paris, France</p>
                     </div>
                     <p></p>
-                    <div class="col-4 text-center"><a href="#" class="reross f-16">+ Suivre l'artiste</a></div>
+                    <div class="col-6 text-end">
+                        <a href="#" class="reross f-16">+ Suivre l'artiste</a>
+                    </div>
                 </div>
 
-                <div class="col-12 text-center"><button class="btn btn-white-XL">En savoir +</button></div>
+                <div class="col-12 text-center"><button class="col-12 btn btn-white-XL">En savoir +</button></div>
+            </div>
+
+
+            <div class="card-artwork col-12 col-lg-3 p-30 m-b-30">
+                <div>
+                    <img class="col-12 m-b-15" src="https://www.businesscoot.com/uploads/study_main_image/166.webp" alt="oeuvre">
+                </div>
+                <div class="tag-grey m-b-15"><p class="text-center m-b-0">230 vues</p></div>
+                <div class="d-flex flex-wrap">
+                    <div class="col-8">
+                        <p class="fst-italic m-b-5">Nom de la série</p>
+                        <p class="m-b-5">N° de série : 1/10</p>
+                    </div>
+                    <div class="col-4 text-center"><p class="reross f-16">3000€</p></div>
+
+                    <div class="col-12">
+                        <p class="m-b-5">Acrylique sur toile, <span class="light-grey">120cmx35cm</span></p>
+                        <p class="bold m-b-5">Emmanuelle Martin</p>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-wrap">
+                    <div class="col-8">
+                        <p><span class="tag-grey">Peintre</span> <span class="tag-grey">Sculpteur</span></p>
+                    </div>
+                    <p></p>
+                    <div class="col-4 text-center">
+                    </div>
+
+                    <div class="col-6">
+                        <p><img class="icon--fixed-xs" src="assets/img/icon_pin.png" alt="localisation"> Paris, France</p>
+                    </div>
+                    <p></p>
+                    <div class="col-6 text-end">
+                        <a href="#" class="reross f-16">+ Suivre l'artiste</a>
+                    </div>
+                </div>
+
+                <div class="col-12 text-center"><button class="col-12 btn btn-white-XL">En savoir +</button></div>
+            </div>
+
+
+            <div class="card-artwork col-12 col-lg-3 p-30 m-b-30">
+                <div>
+                    <img class="col-12 m-b-15" src="https://www.businesscoot.com/uploads/study_main_image/166.webp" alt="oeuvre"/>
+                </div>
+                <div class="tag-grey m-b-15"><p class="text-center m-b-0">230 vues</p></div>
+                <div class="d-flex flex-wrap">
+                    <div class="col-8">
+                        <p class="fst-italic m-b-5">Nom de la série</p>
+                        <p class="m-b-5">N° de série : 1/10</p>
+                    </div>
+                    <div class="col-4 text-center"><p class="reross f-16">3000€</p></div>
+
+                    <div class="col-12">
+                        <p class="m-b-5">Acrylique sur toile, <span class="light-grey">120cmx35cm</span></p>
+                        <p class="bold m-b-5">Emmanuelle Martin</p>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-wrap">
+                    <div class="col-8">
+                        <p><span class="tag-grey">Peintre</span> <span class="tag-grey">Sculpteur</span></p>
+                    </div>
+                    <p></p>
+                    <div class="col-4 text-center">
+                    </div>
+
+                    <div class="col-6">
+                        <p><img class="icon--fixed-xs" src="assets/img/icon_pin.png" alt="localisation"> Paris, France</p>
+                    </div>
+                    <p></p>
+                    <div class="col-6 text-end">
+                        <a href="#" class="reross f-16">+ Suivre l'artiste</a>
+                    </div>
+                </div>
+
+                <div class="col-12 text-center"><button class="col-12 btn btn-white-XL">En savoir +</button></div>
             </div>
 
         </div>
@@ -446,6 +521,21 @@
         <div class="artwork-line-right"></div>
     </div>
 
+    <div class="col-12 m-t-50 m-b-50 p-30">
+        <nav aria-label="...">
+            <ul class="pagination pagination-sm p-30 justify-content-center">
+                <li class="page-item page-link-active" aria-current="page">
+                    <span class="page-link page-link-bot">1</span>
+                </li>
+                <li class="page-item"><a class="page-link page-link-bot " href="#">2</a></li>
+                <li class="page-item"><a class="page-link page-link-bot " href="#">3</a></li>
+                <li class="page-item"><a class="page-link page-link-bot " href="#">4</a></li>
+                <li class="page-item"><a class="page-link page-link-bot " href="#">5</a></li>
+                <li class="page-item"><a class="page-link page-link-bot " href="#">...</a></li>
+                <li class="page-item"><a class="page-link page-link-bot " href="#">100</a></li>
+            </ul>
+        </nav>
+    </div>
     </div>
 </section>
 

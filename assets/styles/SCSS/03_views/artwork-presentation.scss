@@ -1,7 +1,14 @@
 .artwork-info {
-  border: 2px solid black;
+  border-left: 5px solid black;
 }
 
+.artwork-info-right {
+  border-right: 5px solid black;
+}
+
+.artwork-info-col {
+  border-left: 5px solid black;
+}
 
 .artwork-info-img {
   height: 100px;
@@ -16,10 +23,103 @@
   width: 200px;
 }
 
+.artwork-info-full {
+  border: 5px solid black;
+}
+
+.artwork-info-p-border {
+  position: relative;
+  top: 15px;
+  right:0px;
+  float: right;
+  width: 75%;
+  height: 20px;
+  border-left: 5px solid black;
+  border-top: 5px solid black;
+}
+
+.artwork-info-button-line {
+  z-index: -1;
+  width: 15%;
+  height: 60px;
+  position: relative;
+  top: -93px;
+  left: -30px;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+.nav-artwork-2-line {
+  position: relative;
+  top:-50px;
+  left: -15px;
+  width: 20px;
+  border-top: 5px solid black;
+}
+
+.nav-artwork-2-line-2 {
+  position: relative;
+  top:-55px;
+  right: -100%;
+  width: 15px;
+  border-top: 5px solid black;
+}
+
+.nav-artwork-2-line-3 {
+  position: relative;
+  top:-15px;
+  right: -100%;
+  width: 20px;
+  border-top: 5px solid black;
+}
+
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .nav-artwork-2-line {
+    top:-74px;
+    left: -50px;
+    width: 50px;
+    border-top: 5px solid black;
+  }
+
+  .nav-artwork-2-line-2 {
+    position: relative;
+    top:-79px;
+    right: -100%;
+    width: 35px;
+    border-top: 5px solid black;
+  }
+
+  .nav-artwork-2-line-3 {
+    position: relative;
+    top:-15px;
+    right: -100%;
+    width: 60px;
+    border-top: 5px solid black;
+  }
+}
 @media (min-width: 575.98px) {
   .artwork-info-img {
     height: 200px;
     width: 200px;
     border-radius: 200px;
+  }
+}
+
+@media (min-width: 992px) {
+  .artwork-info {
+    border: 2px solid black;
+  }
+
+  .artwork-info-right {
+    border-right: none;
+  }
+
+  .artwork-info-col {
+    border-left: none;
+  }
+
+  .artwork-info-column {
+    min-width: 305px;
   }
 }
