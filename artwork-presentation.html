@@ -239,11 +239,29 @@
 
             <div>
                 <button class="col-12 btn btn-orange reross f-16 m-b-15" type="button">Acquérir l'oeuvre</button>
-                <button class="col-12 btn btn-outline-dark reross f-16 m-b-15" type="button">Proposer un prix</button>
+                <button class="col-12 btn btn-outline-dark reross f-16 m-b-15" data-bs-toggle="modal" data-bs-target="#priceModal" type="button">Proposer un prix</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="priceModal" tabindex="-1" aria-labelledby="priceModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="f-20 m-b-0" id="priceModalLabel">Proposer un prix</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p class="col-12 mb-4">Vous pouvez proposer un prix ci-dessous.</p>
+                                <input type="value" placeholder="984€" class="form-control mb-4" id="price" aria-describedby="price_input">
+
+                                <button type="button" class="btn btn-orange float-end">Proposer</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="artwork-info-button-line d-block d-lg-none"></div>
             </div>
-
-
 
             <!-- CHECKBOX -->
             <div>
@@ -268,13 +286,13 @@
 <!-- TABS -->
                 <ul class="nav nav-pills f-14 col-12 justify-content-center mb-3" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-payment" aria-selected="true">Paiement</button>
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-payment" type="button" role="tab" aria-controls="pills-payment" aria-selected="true">Paiement</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-delivery" aria-selected="false">Livraison</button>
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-delivery" type="button" role="tab" aria-controls="pills-delivery" aria-selected="false">Livraison</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-return" aria-selected="false">Retour</button>
+                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-return" type="button" role="tab" aria-controls="pills-return" aria-selected="false">Retour</button>
                     </li>
                 </ul>
                 <div class="tab-content" id="pills-tabContent">
@@ -287,8 +305,8 @@
                     <div class="tab-pane fade show active" id="pills-delivery" role="tabpanel" aria-labelledby="pills-delivery-tab">
                         <ul class="f-12 list-unstyled p-10">
                             <li class="text-underline m-b-55>- Frais de livraison GRATUIT en Europe</li>
-                            <li>- Livraison sous 7 jours en moyenne</li>
-                            <li><a href="#">- Consultés les questions fréquentes des FAQs</a></li>
+            <li>- Livraison sous 7 jours en moyenne</li>
+            <li><a href="#"> - Consultés les questions fréquentes des FAQs</a></li>
                             <li>- Retours GRATUIT 14 jours après réception</li>
                         </ul>
                     </div>
@@ -312,7 +330,8 @@
                     </div>
 
                 </div>
-        </div>
+
+            </div>
     </div>
 </div>
 
@@ -379,141 +398,410 @@
                 <button class="btn btn-white">Afficher tout</button>
             </div>
         </div>
-        <div class="artwork-info-column col-12 d-flex flex-wrap justify-content-between">
-            <div class="card-artwork col-12 col-lg-3 p-30 m-b-30">
-                <div>
-                    <img class="col-12 m-b-15" src="https://www.businesscoot.com/uploads/study_main_image/166.webp" alt="oeuvre">
-                    <span class="icon-like text-center"><img class="icon--fixed-xs vertical-align-center" src="assets/img/icon_heart.png" alt="icon-like"></span>
-                </div>
-                <div class="tag-grey m-b-15"><p class="text-center m-b-0">230 vues</p></div>
-                <div class="d-flex flex-wrap">
-                    <div class="col-8">
-                        <p class="fst-italic m-b-5">Nom de la série</p>
-                        <p class="m-b-5">N° de série : 1/10</p>
-                    </div>
-                    <div class="col-4 text-center"><p class="reross f-16">3000€</p></div>
-
+        <div class="pt-5 pb-5">
+            <div>
+                <div class="row">
                     <div class="col-12">
-                        <p class="m-b-5">Acrylique sur toile, <span class="light-grey">120cmx35cm</span></p>
-                        <p class="bold m-b-5">Emmanuelle Martin</p>
+                        <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="d-flex flex-wrap justify-content-between">
+
+                                        <div class="card-artwork col-12 col-lg-3 m-b-50">
+                                            <div>
+                                                <img class="col-12 m-b-15" src="https://www.businesscoot.com/uploads/study_main_image/166.webp" alt="oeuvre">
+                                                <span class="icon-like text-center"><img class="icon--fixed-xs vertical-align-center" src="assets/img/icon_heart.png" alt="icon-like"></span>
+                                            </div>
+                                            <div class="tag-grey m-b-15"><p class="text-center m-b-0">230 vues</p></div>
+                                            <div class="d-flex flex-wrap">
+                                                <div class="col-8">
+                                                    <p class="fst-italic m-b-5">Nom de la série</p>
+                                                    <p class="m-b-5">N° de série : 1/10</p>
+                                                </div>
+                                                <div class="col-4 text-center"><p class="reross f-16">3000€</p></div>
+
+                                                <div class="col-12">
+                                                    <p class="m-b-5">Acrylique sur toile, <span class="light-grey">120cmx35cm</span></p>
+                                                    <p class="bold m-b-5">Emmanuelle Martin</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex flex-wrap">
+                                                <div class="col-8">
+                                                    <p><span class="tag-grey">Peintre</span> <span class="tag-grey">Sculpteur</span></p>
+                                                </div>
+                                                <p></p>
+                                                <div class="col-4 text-center">
+                                                </div>
+
+                                                <div class="col-6">
+                                                    <p><img class="icon--fixed-xs" src="assets/img/icon_pin.png" alt="localisation"> Paris, France</p>
+                                                </div>
+                                                <p></p>
+                                                <div class="col-6 text-end">
+                                                    <a href="#" class="reross f-16">+ Suivre l'artiste</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 text-center"><button class="col-9 col-lg-12 btn btn-white-XL">En savoir +</button></div>
+                                        </div>
+
+
+                                        <div class="card-artwork col-12 col-lg-3 m-b-50">
+                                            <div>
+                                                <img class="col-12 m-b-15" src="https://www.businesscoot.com/uploads/study_main_image/166.webp" alt="oeuvre">
+                                                <span class="icon-like text-center"><img class="icon--fixed-xs vertical-align-center" src="assets/img/icon_heart.png" alt="icon-like"></span>
+                                            </div>
+                                            <div class="tag-grey m-b-15"><p class="text-center m-b-0">230 vues</p></div>
+                                            <div class="d-flex flex-wrap">
+                                                <div class="col-8">
+                                                    <p class="fst-italic m-b-5">Nom de la série</p>
+                                                    <p class="m-b-5">N° de série : 1/10</p>
+                                                </div>
+                                                <div class="col-4 text-center"><p class="reross f-16">3000€</p></div>
+
+                                                <div class="col-12">
+                                                    <p class="m-b-5">Acrylique sur toile, <span class="light-grey">120cmx35cm</span></p>
+                                                    <p class="bold m-b-5">Emmanuelle Martin</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex flex-wrap">
+                                                <div class="col-8">
+                                                    <p><span class="tag-grey">Peintre</span> <span class="tag-grey">Sculpteur</span></p>
+                                                </div>
+                                                <p></p>
+                                                <div class="col-4 text-center">
+                                                </div>
+
+                                                <div class="col-6">
+                                                    <p><img class="icon--fixed-xs" src="assets/img/icon_pin.png" alt="localisation"> Paris, France</p>
+                                                </div>
+                                                <p></p>
+                                                <div class="col-6 text-end">
+                                                    <a href="#" class="reross f-16">+ Suivre l'artiste</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 text-center"><button class="col-9 col-lg-12 btn btn-white-XL">En savoir +</button></div>
+                                        </div>
+
+
+                                        <div class="card-artwork col-12 col-lg-3 m-b-50">
+                                            <div>
+                                                <img class="col-12 m-b-15" src="https://www.businesscoot.com/uploads/study_main_image/166.webp" alt="oeuvre">
+                                                <span class="icon-like text-center"><img class="icon--fixed-xs vertical-align-center" src="assets/img/icon_heart.png" alt="icon-like"></span>
+                                            </div>
+                                            <div class="tag-grey m-b-15"><p class="text-center m-b-0">230 vues</p></div>
+                                            <div class="d-flex flex-wrap">
+                                                <div class="col-8">
+                                                    <p class="fst-italic m-b-5">Nom de la série</p>
+                                                    <p class="m-b-5">N° de série : 1/10</p>
+                                                </div>
+                                                <div class="col-4 text-center"><p class="reross f-16">3000€</p></div>
+
+                                                <div class="col-12">
+                                                    <p class="m-b-5">Acrylique sur toile, <span class="light-grey">120cmx35cm</span></p>
+                                                    <p class="bold m-b-5">Emmanuelle Martin</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex flex-wrap">
+                                                <div class="col-8">
+                                                    <p><span class="tag-grey">Peintre</span> <span class="tag-grey">Sculpteur</span></p>
+                                                </div>
+                                                <p></p>
+                                                <div class="col-4 text-center">
+                                                </div>
+
+                                                <div class="col-6">
+                                                    <p><img class="icon--fixed-xs" src="assets/img/icon_pin.png" alt="localisation"> Paris, France</p>
+                                                </div>
+                                                <p></p>
+                                                <div class="col-6 text-end">
+                                                    <a href="#" class="reross f-16">+ Suivre l'artiste</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 text-center"><button class="col-9 col-lg-12 btn btn-white-XL">En savoir +</button></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-flex flex-wrap justify-content-between">
+
+                                        <div class="card-artwork col-12 col-lg-3 m-b-50">
+                                            <div>
+                                                <img class="col-12 m-b-15" src="https://www.businesscoot.com/uploads/study_main_image/166.webp" alt="oeuvre">
+                                                <span class="icon-like text-center"><img class="icon--fixed-xs vertical-align-center" src="assets/img/icon_heart.png" alt="icon-like"></span>
+                                            </div>
+                                            <div class="tag-grey m-b-15"><p class="text-center m-b-0">230 vues</p></div>
+                                            <div class="d-flex flex-wrap">
+                                                <div class="col-8">
+                                                    <p class="fst-italic m-b-5">Nom de la série</p>
+                                                    <p class="m-b-5">N° de série : 1/10</p>
+                                                </div>
+                                                <div class="col-4 text-center"><p class="reross f-16">3000€</p></div>
+
+                                                <div class="col-12">
+                                                    <p class="m-b-5">Acrylique sur toile, <span class="light-grey">120cmx35cm</span></p>
+                                                    <p class="bold m-b-5">Emmanuelle Martin</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex flex-wrap">
+                                                <div class="col-8">
+                                                    <p><span class="tag-grey">Peintre</span> <span class="tag-grey">Sculpteur</span></p>
+                                                </div>
+                                                <p></p>
+                                                <div class="col-4 text-center">
+                                                </div>
+
+                                                <div class="col-6">
+                                                    <p><img class="icon--fixed-xs" src="assets/img/icon_pin.png" alt="localisation"> Paris, France</p>
+                                                </div>
+                                                <p></p>
+                                                <div class="col-6 text-end">
+                                                    <a href="#" class="reross f-16">+ Suivre l'artiste</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 text-center"><button class="col-9 col-lg-12 btn btn-white-XL">En savoir +</button></div>
+                                        </div>
+
+
+                                        <div class="card-artwork col-12 col-lg-3 m-b-50">
+                                            <div>
+                                                <img class="col-12 m-b-15" src="https://www.businesscoot.com/uploads/study_main_image/166.webp" alt="oeuvre">
+                                                <span class="icon-like text-center"><img class="icon--fixed-xs vertical-align-center" src="assets/img/icon_heart.png" alt="icon-like"></span>
+                                            </div>
+                                            <div class="tag-grey m-b-15"><p class="text-center m-b-0">230 vues</p></div>
+                                            <div class="d-flex flex-wrap">
+                                                <div class="col-8">
+                                                    <p class="fst-italic m-b-5">Nom de la série</p>
+                                                    <p class="m-b-5">N° de série : 1/10</p>
+                                                </div>
+                                                <div class="col-4 text-center"><p class="reross f-16">3000€</p></div>
+
+                                                <div class="col-12">
+                                                    <p class="m-b-5">Acrylique sur toile, <span class="light-grey">120cmx35cm</span></p>
+                                                    <p class="bold m-b-5">Emmanuelle Martin</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex flex-wrap">
+                                                <div class="col-8">
+                                                    <p><span class="tag-grey">Peintre</span> <span class="tag-grey">Sculpteur</span></p>
+                                                </div>
+                                                <p></p>
+                                                <div class="col-4 text-center">
+                                                </div>
+
+                                                <div class="col-6">
+                                                    <p><img class="icon--fixed-xs" src="assets/img/icon_pin.png" alt="localisation"> Paris, France</p>
+                                                </div>
+                                                <p></p>
+                                                <div class="col-6 text-end">
+                                                    <a href="#" class="reross f-16">+ Suivre l'artiste</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 text-center"><button class="col-9 col-lg-12 btn btn-white-XL">En savoir +</button></div>
+                                        </div>
+
+
+                                        <div class="card-artwork col-12 col-lg-3 m-b-50">
+                                            <div>
+                                                <img class="col-12 m-b-15" src="https://www.businesscoot.com/uploads/study_main_image/166.webp" alt="oeuvre">
+                                                <span class="icon-like text-center"><img class="icon--fixed-xs vertical-align-center" src="assets/img/icon_heart.png" alt="icon-like"></span>
+                                            </div>
+                                            <div class="tag-grey m-b-15"><p class="text-center m-b-0">230 vues</p></div>
+                                            <div class="d-flex flex-wrap">
+                                                <div class="col-8">
+                                                    <p class="fst-italic m-b-5">Nom de la série</p>
+                                                    <p class="m-b-5">N° de série : 1/10</p>
+                                                </div>
+                                                <div class="col-4 text-center"><p class="reross f-16">3000€</p></div>
+
+                                                <div class="col-12">
+                                                    <p class="m-b-5">Acrylique sur toile, <span class="light-grey">120cmx35cm</span></p>
+                                                    <p class="bold m-b-5">Emmanuelle Martin</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex flex-wrap">
+                                                <div class="col-8">
+                                                    <p><span class="tag-grey">Peintre</span> <span class="tag-grey">Sculpteur</span></p>
+                                                </div>
+                                                <p></p>
+                                                <div class="col-4 text-center">
+                                                </div>
+
+                                                <div class="col-6">
+                                                    <p><img class="icon--fixed-xs" src="assets/img/icon_pin.png" alt="localisation"> Paris, France</p>
+                                                </div>
+                                                <p></p>
+                                                <div class="col-6 text-end">
+                                                    <a href="#" class="reross f-16">+ Suivre l'artiste</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 text-center"><button class="col-9 col-lg-12 btn btn-white-XL">En savoir +</button></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-flex flex-wrap justify-content-between">
+
+                                        <div class="card-artwork col-12 col-lg-3 m-b-50">
+                                            <div>
+                                                <img class="col-12 m-b-15" src="https://www.businesscoot.com/uploads/study_main_image/166.webp" alt="oeuvre">
+                                                <span class="icon-like text-center"><img class="icon--fixed-xs vertical-align-center" src="assets/img/icon_heart.png" alt="icon-like"></span>
+                                            </div>
+                                            <div class="tag-grey m-b-15"><p class="text-center m-b-0">230 vues</p></div>
+                                            <div class="d-flex flex-wrap">
+                                                <div class="col-8">
+                                                    <p class="fst-italic m-b-5">Nom de la série</p>
+                                                    <p class="m-b-5">N° de série : 1/10</p>
+                                                </div>
+                                                <div class="col-4 text-center"><p class="reross f-16">3000€</p></div>
+
+                                                <div class="col-12">
+                                                    <p class="m-b-5">Acrylique sur toile, <span class="light-grey">120cmx35cm</span></p>
+                                                    <p class="bold m-b-5">Emmanuelle Martin</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex flex-wrap">
+                                                <div class="col-8">
+                                                    <p><span class="tag-grey">Peintre</span> <span class="tag-grey">Sculpteur</span></p>
+                                                </div>
+                                                <p></p>
+                                                <div class="col-4 text-center">
+                                                </div>
+
+                                                <div class="col-6">
+                                                    <p><img class="icon--fixed-xs" src="assets/img/icon_pin.png" alt="localisation"> Paris, France</p>
+                                                </div>
+                                                <p></p>
+                                                <div class="col-6 text-end">
+                                                    <a href="#" class="reross f-16">+ Suivre l'artiste</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 text-center"><button class="col-9 col-lg-12 btn btn-white-XL">En savoir +</button></div>
+                                        </div>
+
+
+                                        <div class="card-artwork col-12 col-lg-3 m-b-50">
+                                            <div>
+                                                <img class="col-12 m-b-15" src="https://www.businesscoot.com/uploads/study_main_image/166.webp" alt="oeuvre">
+                                                <span class="icon-like text-center"><img class="icon--fixed-xs vertical-align-center" src="assets/img/icon_heart.png" alt="icon-like"></span>
+                                            </div>
+                                            <div class="tag-grey m-b-15"><p class="text-center m-b-0">230 vues</p></div>
+                                            <div class="d-flex flex-wrap">
+                                                <div class="col-8">
+                                                    <p class="fst-italic m-b-5">Nom de la série</p>
+                                                    <p class="m-b-5">N° de série : 1/10</p>
+                                                </div>
+                                                <div class="col-4 text-center"><p class="reross f-16">3000€</p></div>
+
+                                                <div class="col-12">
+                                                    <p class="m-b-5">Acrylique sur toile, <span class="light-grey">120cmx35cm</span></p>
+                                                    <p class="bold m-b-5">Emmanuelle Martin</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex flex-wrap">
+                                                <div class="col-8">
+                                                    <p><span class="tag-grey">Peintre</span> <span class="tag-grey">Sculpteur</span></p>
+                                                </div>
+                                                <p></p>
+                                                <div class="col-4 text-center">
+                                                </div>
+
+                                                <div class="col-6">
+                                                    <p><img class="icon--fixed-xs" src="assets/img/icon_pin.png" alt="localisation"> Paris, France</p>
+                                                </div>
+                                                <p></p>
+                                                <div class="col-6 text-end">
+                                                    <a href="#" class="reross f-16">+ Suivre l'artiste</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 text-center"><button class="col-9 col-lg-12 btn btn-white-XL">En savoir +</button></div>
+                                        </div>
+
+
+                                        <div class="card-artwork col-12 col-lg-3 m-b-50">
+                                            <div>
+                                                <img class="col-12 m-b-15" src="https://www.businesscoot.com/uploads/study_main_image/166.webp" alt="oeuvre">
+                                                <span class="icon-like text-center"><img class="icon--fixed-xs vertical-align-center" src="assets/img/icon_heart.png" alt="icon-like"></span>
+                                            </div>
+                                            <div class="tag-grey m-b-15"><p class="text-center m-b-0">230 vues</p></div>
+                                            <div class="d-flex flex-wrap">
+                                                <div class="col-8">
+                                                    <p class="fst-italic m-b-5">Nom de la série</p>
+                                                    <p class="m-b-5">N° de série : 1/10</p>
+                                                </div>
+                                                <div class="col-4 text-center"><p class="reross f-16">3000€</p></div>
+
+                                                <div class="col-12">
+                                                    <p class="m-b-5">Acrylique sur toile, <span class="light-grey">120cmx35cm</span></p>
+                                                    <p class="bold m-b-5">Emmanuelle Martin</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex flex-wrap">
+                                                <div class="col-8">
+                                                    <p><span class="tag-grey">Peintre</span> <span class="tag-grey">Sculpteur</span></p>
+                                                </div>
+                                                <p></p>
+                                                <div class="col-4 text-center">
+                                                </div>
+
+                                                <div class="col-6">
+                                                    <p><img class="icon--fixed-xs" src="assets/img/icon_pin.png" alt="localisation"> Paris, France</p>
+                                                </div>
+                                                <p></p>
+                                                <div class="col-6 text-end">
+                                                    <a href="#" class="reross f-16">+ Suivre l'artiste</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 text-center"><button class="col-9 col-lg-12 btn btn-white-XL">En savoir +</button></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 text-right">
+
+                            <div class="m-t-50 m-b-50">
+                                <nav aria-label="navigation_artwork">
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item">
+                                            <a class="page-link tag-white m-r-5" href="#carouselExampleIndicators2" role="button" aria-label="Previous" data-slide="prev">
+                                                <span aria-hidden="true"><</span>
+                                            </a>
+                                        </li>
+                                        <a class="page-link tag-white" href="#carouselExampleIndicators2" role="button" data-slide="next" aria-label="Next">
+                                            <span aria-hidden="true">></span>
+                                        </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="d-flex flex-wrap">
-                    <div class="col-8">
-                        <p><span class="tag-grey">Peintre</span> <span class="tag-grey">Sculpteur</span></p>
-                    </div>
-                    <p></p>
-                    <div class="col-4 text-center">
-                    </div>
-
-                    <div class="col-6">
-                        <p><img class="icon--fixed-xs" src="assets/img/icon_pin.png" alt="localisation"> Paris, France</p>
-                    </div>
-                    <p></p>
-                    <div class="col-6 text-end">
-                        <a href="#" class="reross f-16">+ Suivre l'artiste</a>
-                    </div>
-                </div>
-
-                <div class="col-12 text-center"><button class="col-12 btn btn-white-XL">En savoir +</button></div>
             </div>
 
-
-            <div class="card-artwork col-12 col-lg-3 p-30 m-b-30">
-                <div>
-                    <img class="col-12 m-b-15" src="https://www.businesscoot.com/uploads/study_main_image/166.webp" alt="oeuvre">
-                </div>
-                <div class="tag-grey m-b-15"><p class="text-center m-b-0">230 vues</p></div>
-                <div class="d-flex flex-wrap">
-                    <div class="col-8">
-                        <p class="fst-italic m-b-5">Nom de la série</p>
-                        <p class="m-b-5">N° de série : 1/10</p>
-                    </div>
-                    <div class="col-4 text-center"><p class="reross f-16">3000€</p></div>
-
-                    <div class="col-12">
-                        <p class="m-b-5">Acrylique sur toile, <span class="light-grey">120cmx35cm</span></p>
-                        <p class="bold m-b-5">Emmanuelle Martin</p>
-                    </div>
-                </div>
-
-                <div class="d-flex flex-wrap">
-                    <div class="col-8">
-                        <p><span class="tag-grey">Peintre</span> <span class="tag-grey">Sculpteur</span></p>
-                    </div>
-                    <p></p>
-                    <div class="col-4 text-center">
-                    </div>
-
-                    <div class="col-6">
-                        <p><img class="icon--fixed-xs" src="assets/img/icon_pin.png" alt="localisation"> Paris, France</p>
-                    </div>
-                    <p></p>
-                    <div class="col-6 text-end">
-                        <a href="#" class="reross f-16">+ Suivre l'artiste</a>
-                    </div>
-                </div>
-
-                <div class="col-12 text-center"><button class="col-12 btn btn-white-XL">En savoir +</button></div>
-            </div>
-
-
-            <div class="card-artwork col-12 col-lg-3 p-30 m-b-30">
-                <div>
-                    <img class="col-12 m-b-15" src="https://www.businesscoot.com/uploads/study_main_image/166.webp" alt="oeuvre"/>
-                </div>
-                <div class="tag-grey m-b-15"><p class="text-center m-b-0">230 vues</p></div>
-                <div class="d-flex flex-wrap">
-                    <div class="col-8">
-                        <p class="fst-italic m-b-5">Nom de la série</p>
-                        <p class="m-b-5">N° de série : 1/10</p>
-                    </div>
-                    <div class="col-4 text-center"><p class="reross f-16">3000€</p></div>
-
-                    <div class="col-12">
-                        <p class="m-b-5">Acrylique sur toile, <span class="light-grey">120cmx35cm</span></p>
-                        <p class="bold m-b-5">Emmanuelle Martin</p>
-                    </div>
-                </div>
-
-                <div class="d-flex flex-wrap">
-                    <div class="col-8">
-                        <p><span class="tag-grey">Peintre</span> <span class="tag-grey">Sculpteur</span></p>
-                    </div>
-                    <p></p>
-                    <div class="col-4 text-center">
-                    </div>
-
-                    <div class="col-6">
-                        <p><img class="icon--fixed-xs" src="assets/img/icon_pin.png" alt="localisation"> Paris, France</p>
-                    </div>
-                    <p></p>
-                    <div class="col-6 text-end">
-                        <a href="#" class="reross f-16">+ Suivre l'artiste</a>
-                    </div>
-                </div>
-
-                <div class="col-12 text-center"><button class="col-12 btn btn-white-XL">En savoir +</button></div>
-            </div>
-
-        </div>
-
-    <div class="m-t-50 m-b-50">
-        <nav aria-label="navigation_artwork">
-            <ul class="pagination justify-content-center">
-                <li class="page-item">
-                    <a class="page-link tag-white m-r-5" href="#" aria-label="Previous">
-                        <span aria-hidden="true"><</span>
-                    </a>
-                </li>
-                    <a class="page-link tag-white" href="#" aria-label="Next">
-                        <span aria-hidden="true">></span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
 
     <div class="col-12">
         <p class="text-center m-b-50">N’hésitez pas à contacter le service clients de ART INTERACTIVITIES si vous avez besoin d’information relative à une oeuvre qui serait susceptible de vous plaire.
@@ -550,6 +838,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.0/lazysizes.min.js"></script>
 <script src="https://mreq.github.io/slick-lightbox/dist/slick-lightbox.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
 <script src="assets/js/slider.js"></script>
 
 </body>

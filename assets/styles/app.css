@@ -49,9 +49,9 @@
   width: 40px;
   height: 40px;
   position: absolute;
-  left: 35px;
+  left: 10px;
   padding: 8px;
-  margin-top: -5px;
+  margin-top: -2px;
   background-color: white;
   border-radius: 50px;
 }
@@ -60,7 +60,7 @@
   .icon-like {
     left: 8%;
     margin-top: -1px;
-    margin-left: -2px;
+    margin-left: -125px;
   }
 }
 /*.icon--fixed-md-xs svg {*/
@@ -3017,8 +3017,8 @@ img {
 }
 
 .btn-white-XL {
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 70px;
+  padding-right: 70px;
   color: black;
   text-transform: uppercase;
   border: 1px solid black;
@@ -3051,6 +3051,11 @@ img {
   position: relative;
   bottom: 60px;
   background-color: rgba(255, 255, 255, 0.4);
+}
+
+.form-check-input:checked {
+  background-color: black !important;
+  border-color: black !important;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
