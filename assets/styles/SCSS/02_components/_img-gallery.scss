@@ -49,11 +49,18 @@ img {
 }
 
 .gallery_accroche {
-  top: 215px;
+  top: 200px;
   margin-left: -3px;
   height: 45%;
-  border-right: black 5px solid;
+  border-right: black 8px solid;
   position: absolute;
+}
+
+
+.gallery_img {
+  width : 100px;
+  height: 100px;
+  border-radius: 50px;
 }
 
 @media (min-width: 575.98px) {

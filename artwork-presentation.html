@@ -50,7 +50,7 @@
 
 <section class="container">
 <!--Breadcrumb-->
-    <nav aria-label="breadcrumb" class="p-10 m-t-30 m-b-30">
+    <nav aria-label="breadcrumb" class="p-10 m-t-15 m-b-30">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#"><img class="icon--fixed-xxs" src="assets/img/icon_home.png" alt="icon-home"></a></li>
             <li class="breadcrumb-item"><a href="#">Art shop</a></li>
@@ -64,25 +64,31 @@
 <!-- Menu oeuvre -->
 
     <ul class="nav-artwork d-none d-lg-flex col-12 nav nav-oeuvre justify-content-md-end">
+<!--        <span class="d-flex flex-wrap">-->
+<!--        <div class="col-4"><img class="gallery_img" src="https://cdn.getyourguide.com/img/tour/5d4c31d4123d3.jpeg/99.jpg" alt="gallery"></div>-->
+<!--        <div class="col-7">Nom de la Galerie ou de l’hôtel des vente, Ville, Pays</div>-->
+<!--        </span>-->
+
         <li class=" nav-item nav-item-empty">
             <span class="nav-link"></span>
         </li>
         <li class="nav-item">
             <span class="gallery_accroche"></span>
-            <a class="nav-link" href="#">Présentation</a>
+            <a class="nav-link" href="#presentation">Présentation</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">À propos de l'oeuvre</a>
+            <a class="nav-link" href="#a_propos">À propos de l'oeuvre</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Artiste</a>
+            <a class="nav-link" href="#artist">Artiste</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Autres oeuvres</a>
+            <a class="nav-link" href="#others_artwork">Autres oeuvres</a>
         </li>
     </ul>
 
-<div class="d-flex flex-wrap justify-content-between m-t-lg-30">
+
+<div class="d-flex flex-wrap justify-content-between m-t-lg-30" id="presentation">
     <div class="col-12 col-lg-8 m-t-lg-50">
         <div>
             <p class="col-12 reross text-center d-block d-lg-none m-b-0">Emmanuelle MARTIN, France</p>
@@ -136,34 +142,15 @@
             </div>
         </div>
 
-<!--        <div class="d-flex flex-wrap justify-content-center">-->
+        <div class="d-none d-lg-flex artwork-info-col d-flex flex-wrap m-t-50" id="a_propos">
+        <H2 class="col-8 reross align-self-end p-10">À propos de l'oeuvre</H2>
 
-<!--            <button type="button" class="btn btn-outline-danger m-r-15">Like</button>-->
-
-<!--            <div class="dropdown">-->
-<!--                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">-->
-<!--                    Button partage-->
-<!--                </a>-->
-
-<!--                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">-->
-<!--                    <li><a class="dropdown-item" href="#">Pinterest</a></li>-->
-<!--                    <li><a class="dropdown-item" href="#">Facebook</a></li>-->
-<!--                    <li><a class="dropdown-item" href="#">Instagram</a></li>-->
-<!--                </ul>-->
-<!--            </div>-->
-<!--        </div>-->
-
-        <div class="d-none d-lg-flex artwork-info-col d-flex flex-wrap m-t-50">
-        <H2 class="col-10 reross align-self-end p-10">À propos de l'oeuvre</H2>
-
-            <div class="dropdown col-2">
-                <button class="btn dropdown-toggle dropend" type="button" id="dropdownVolume" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img class="icon--fixed-xs" src="assets/img/icon_volume.png" alt="icon-volume">
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownVolume">
-                    <li><a class="dropdown-item tex" href="#"><img class="icon--fixed-xs" src="assets/img/italy.png" alt="flag-italy"> Italien</a></li>
-                    <li><a class="dropdown-item" href="#"><img class="icon--fixed-xs" src="assets/img/france.png" alt="flag-france"> Français</a></li>
-                </ul>
+            <div class="dropdown d-flex col-3">
+                <a class="col-2 align-self-center" href="#"><img class="icon--fixed-sm" src="assets/img/icon_volume.png" alt="icon-volume"></a>
+                <div>
+                    <a class="col-12 dropdown-item" href="#"><img class="icon--fixed-sm" src="assets/img/italy.png" alt="flag-italy"></a>
+                    <a class="col-12 dropdown-item" href="#"><img class="icon--fixed-sm" src="assets/img/france.png" alt="flag-france"></a>
+                </div>
             </div>
 
             <p class="col-12 p-10 m-t-15 m-b-0 text-justify">
@@ -204,7 +191,7 @@
 <!--    </div>-->
 
     <div class="artwork-info-column col-12 col-lg-3 m-t-lg-50">
-        <div class="artwork-info p-30 m-b-lg-30">
+        <div class="artwork-info p-15 m-b-lg-30">
             <h4 class="text-center space-no-wrap f-18 f-md-16">Jeune fille à la perle, 2021</h4>
             <p class="text-center reross d-none d-lg-block bold">Emmanuelle MARTIN, France</p>
             <p class="f-14">
@@ -219,9 +206,9 @@
             </p>
         </div>
 
-        <div class="artwork-info d-none d-lg-block m-b-lg-30 p-30">
+        <div class="artwork-info d-none d-lg-block m-b-lg-30 p-15">
             <p class="text-center reross text-uppercase bold">Résumé</p>
-            <ul class="f-14 list-unstyled">
+            <ul class="f-14 list-unstyled m-b-0">
                 <li>- Artiste émergent</li>
                 <li>- Artiste prometteur à investir</li>
                 <li>- Rayonnement national</li>
@@ -230,16 +217,16 @@
             </ul>
         </div>
 
-        <div class="artwork-info m-b-lg-30 p-30">
+        <div class="artwork-info m-b-lg-30 p-15">
             <p class="text-center reross f-24">3000 €</p>
 
             <hr class="text-center">
 
-            <p class="f-14 fst-italic text-center">Payez en 3 x sans frais *</p>
+            <p class="f-14 fst-italic text-center m-b-30">Payez en 3 x sans frais *</p>
 
             <div>
-                <button class="col-12 btn btn-orange reross f-16 m-b-15" type="button">Acquérir l'oeuvre</button>
-                <button class="col-12 btn btn-outline-dark reross f-16 m-b-15" data-bs-toggle="modal" data-bs-target="#priceModal" type="button">Proposer un prix</button>
+                <button class="col-12 btn btn-orange reross f-16 m-b-15 p-10" type="button">Acquérir l'oeuvre</button>
+                <button class="col-12 btn btn-outline-dark reross f-16 m-b-30 p-10" data-bs-toggle="modal" data-bs-target="#priceModal" type="button">Proposer un prix</button>
 
                 <!-- Modal -->
                 <div class="modal fade" id="priceModal" tabindex="-1" aria-labelledby="priceModalLabel" aria-hidden="true">
@@ -265,19 +252,19 @@
 
             <!-- CHECKBOX -->
             <div>
-                <ul class="f-14 list-unstyled fst-italic m-b-15 text-center">
+                <ul class="f-14 list-unstyled fst-italic m-b-15 m-x-15">
                     <li>- Oeuvre originale</li>
                     <li>- Vendu avec un certificat d'authenticité</li>
                 </ul>
 
-                <div class="form-check m-b-5 text-left m-x-30">
+                <div class="form-check m-b-5 text-left m-x-15">
                     <input class="form-check-input" type="checkbox" value="" id="check-dedicasse">
                     <label class="form-check-label f-14" for="check-dedicasse">
                         Demander une dédicace
                     </label>
                 </div>
 
-                <div class="form-check m-b-30 text-left m-x-30">
+                <div class="form-check m-b-30 text-left m-x-15">
                     <input class="form-check-input" type="checkbox" value="" id="check-gift">
                     <label class="form-check-label f-14" for="check-gift">
                         Cadeau, personnaliser le cadeau
@@ -286,10 +273,10 @@
 <!-- TABS -->
                 <ul class="nav nav-pills f-14 col-12 justify-content-center mb-3" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-payment" type="button" role="tab" aria-controls="pills-payment" aria-selected="true">Paiement</button>
+                        <button class="nav-link" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-payment" type="button" role="tab" aria-controls="pills-payment" aria-selected="true">Paiement</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-delivery" type="button" role="tab" aria-controls="pills-delivery" aria-selected="false">Livraison</button>
+                        <button class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-delivery" type="button" role="tab" aria-controls="pills-delivery" aria-selected="false">Livraison</button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-return" type="button" role="tab" aria-controls="pills-return" aria-selected="false">Retour</button>
@@ -342,13 +329,13 @@
                     <a class="nav-link" href="#">À propos <br>de l'oeuvre</a>
                 </li>
                 <li class="flex-fill nav-item">
-                    <a class="nav-link" href="#">Paiement</a>
+                    <a class="nav-link line-height-30" href="#">Paiement</a>
                 </li>
                 <li class="flex-fill nav-item">
-                    <a class="nav-link" href="#">Livraison</a>
+                    <a class="nav-link line-height-30" href="#">Livraison</a>
                 </li>
                 <li class="flex-fill nav-item">
-                    <a class="nav-link" href="#">Retour</a>
+                    <a class="nav-link line-height-30" href="#">Retour</a>
                 </li>
             </ul>
             <div class="nav-artwork-2-line"></div>
@@ -365,12 +352,13 @@
 
             <span class="artwork-info-p-border"></span>
         </div>
-        <div class="col-12 col-lg-9 d-flex flex-wrap m-t-50">
+        <div class="col-12 col-lg-9 d-flex flex-wrap justify-content-center m-t-50 m-b-30">
+            <H1 class="f-20 col-12 d-lg-none text-center">Emmanuelle Martin <span class="m-l-5 align-text-bottom"><img class="icon--fixed-sm" src="assets/img/france.png" alt="flag-france"></span> </H1>
             <div class="col-5 text-center"><img class="artwork-info-img" src="https://www.apprendre-a-dessiner.org/wp-content/uploads/2017/08/pablo_picasso_la_clau.jpg" alt="portrait-artiste">
             </div>
-            <div class="col-7 p-10 d-flex flex-wrap">
-                <H1 class="f-20 col-12 ">Emmanuelle Martin <span class="m-l-5"><img class="icon--fixed-xs" src="assets/img/france.png" alt="flag-france"></span> </H1>
-                <a href="#" class="col-12">Découvrir son profil <span class="align-text-top"><img class="icon--fixed-xxs" src="assets/img/icon_next.png" alt="arrow-right"></span></a>
+            <div class="col-5 p-10 d-flex flex-wrap" id="artist">
+                <H1 class="f-24 col-12 d-none d-lg-block">Emmanuelle Martin <span class="m-l-5 align-text-bottom"><img class="icon--fixed" src="assets/img/france.png" alt="flag-france"></span> </H1>
+                <a href="#" class="col-12 underline">Découvrir son profil</a>
                 <a href="#" class="col-12">10 oeuvres en vente</a>
                 <a href="#" class="col-12">+ Suivre l'artiste</a>
                 <p class="f-16 col-12">10 fans</p>
@@ -390,7 +378,7 @@
         </div>
     </div>
 
-    <div class="col-12 m-t-50 m-b-50 p-l-lg-30">
+    <div class="col-12 m-t-50 m-b-50 p-l-lg-30" id="others_artwork">
         <H2 class="col-12 reross m-b-30 p-l-10">Oeuvres par série de l'artiste</H2>
         <div class="col-12 d-flex flex-wrap m-b-30">
             <div class="col-4 col-lg-8"></div>

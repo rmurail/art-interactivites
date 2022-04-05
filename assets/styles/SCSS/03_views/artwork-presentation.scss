@@ -41,10 +41,10 @@
 .artwork-info-button-line {
   z-index: -1;
   width: 15%;
-  height: 60px;
+  height: 68px;
   position: relative;
-  top: -93px;
-  left: -30px;
+  top: -120px;
+  left: -20px;
   border-top: 5px solid black;
   border-bottom: 5px solid black;
 }
@@ -100,15 +100,15 @@
 }
 @media (min-width: 575.98px) {
   .artwork-info-img {
-    height: 200px;
-    width: 200px;
-    border-radius: 200px;
+    height: 300px;
+    width: 300px;
+    border-radius: 300px;
   }
 }
 
 @media (min-width: 992px) {
   .artwork-info {
-    border: 2px solid black;
+    border: 3px solid black;
   }
 
   .artwork-info-right {
