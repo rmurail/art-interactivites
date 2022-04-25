@@ -1,0 +1,71 @@
+//Colonne de gauche
+
+.blog-article_theme {
+  position: relative;
+  left: -5%;
+}
+
+.blog-article-writer {
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  background-image: url("https://www.fleurette-constructeur.fr/wp-content/uploads/2019/09/image-placeholder.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.commentaire {
+  border-left: 3px solid black;
+}
+
+.blog-article-tags {
+  border-top: 1px solid $light-grey;
+  border-bottom: 1px solid $light-grey;
+  padding: 50px 15px;
+}
+  // Colonne de droite
+.blog-article-right {
+  border-left: 1px $light-grey solid;
+}
+.border_newsletter {
+  border-bottom: 4px solid black;
+}
+
+.newsletter_title {
+  line-height: 12px;
+}
+
+//- Tabs
+
+.nav-tabs-article {
+  border: none;
+
+  .nav-link {
+    color: black;
+
+    &:active {
+      color: black;
+    }
+
+  }
+  .nav-link.active {
+    border: none;
+  }
+}
+
+.border-news {
+  height: 25px;
+  width: 90px;
+  border-bottom: 4px solid black;
+}
+
+.border-famous {
+  height: 25px;
+  width: 90px;
+  border-bottom: 1px solid black;
+}
+
+.blog-article_news {
+  padding: 30px 10px;
+  border-bottom: 1px $light-grey solid;
+}

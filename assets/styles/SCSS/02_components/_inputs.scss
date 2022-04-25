@@ -1,0 +1,20 @@
+// SEARCH BAR
+.input_form {
+  padding: 15px;
+  border : 3px solid black;
+
+  input {
+    border: none;
+    background: none;
+
+    &::placeholder {
+      text-transform: uppercase;
+      color: black;
+    }
+  }
+
+  .searchButton {
+      border: none;
+      background: none;
+  }
+}

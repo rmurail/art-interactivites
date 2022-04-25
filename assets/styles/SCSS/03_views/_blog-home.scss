@@ -1,0 +1,35 @@
+
+//NAVBAR
+
+.navbar-blog {
+  z-index: 1000000;
+  background-color: white;
+  overflow-y: hidden;
+  border-top: 1px black solid;
+  border-bottom: 1px black solid;
+
+  .nav-link {
+    font-family: Reross;
+    text-transform: uppercase;
+    color: black;
+    font-size: 22px;
+
+
+
+    &:hover {
+      color: black;
+      text-decoration: underline;
+
+  }
+
+  }
+
+}
+
+// HEADER
+
+
+.header-blog {
+  background-color: white;
+  z-index: 1000000;
+}
